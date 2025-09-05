@@ -1,5 +1,5 @@
 const { compare } = require("./compare");
-const { hash } = require("../middleware/hashpassword");
+const { hash } = require("./hasspassword");
 const User = require("../model/user.model");
 const { generateToken } = require("../services/GenrateToken");
 
