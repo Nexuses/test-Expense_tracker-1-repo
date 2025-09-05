@@ -7,8 +7,8 @@ app.use(express.urlencoded({extended:true}))
 app.use(cookieParser());
 require("./db")
 const port = process.env.PORT
-const UserRoute=require("./routes/user.route")
-const ExpenseRoute=require("./routes/expense.route")
+const UserRoute=require("./user.route")
+const ExpenseRoute=require("./expense.route")
 const swaggerUi = require('swagger-ui-express');
 const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerDefinition = {
@@ -29,7 +29,7 @@ const swaggerDefinition = {
 const options = {
     swaggerDefinition,
     // Path to the API docs
-    apis: ['./routes/user.route.js', './routes/expense.route.js'], // Path where API routes are defined
+    apis: ['./user.route.js', './expense.route.js'], // Path where API routes are defined
 };
 
 // Initialize SwaggerJSDoc
