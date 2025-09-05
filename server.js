@@ -5,7 +5,7 @@ const cookieParser=require("cookie-parser")
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser());
-require("./config/db")
+require("./db")
 const port = process.env.PORT
 const UserRoute=require("./routes/user.route")
 const ExpenseRoute=require("./routes/expense.route")
