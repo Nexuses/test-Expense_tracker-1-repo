@@ -1,4 +1,4 @@
-const Usercontroller=require("../controller/user.controller")
+const Usercontroller=require("./user.controller")
 
 const router=require("express").Router();
 /**
